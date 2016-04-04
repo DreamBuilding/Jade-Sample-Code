@@ -120,6 +120,8 @@
     <Compile Include="App_Start\IocConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ConversionController.cs" />
+    <Compile Include="Controllers\DecimalToTextConverter.cs" />
+    <Compile Include="Controllers\IDecimalToTextConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

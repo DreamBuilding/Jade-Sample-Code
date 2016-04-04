@@ -2,6 +2,7 @@
 using Autofac;
 using Autofac.Integration.WebApi;
 using Owin;
+using SampleSite.Controllers;
 
 namespace SampleSite
 {
@@ -12,6 +13,8 @@ namespace SampleSite
             // Create the container builder.
             var builder = new ContainerBuilder();
             {
+                builder.RegisterType<DecimalToTextConverter>().As<INumberToTextConverter<decimal>>();
+
                 // Register the Web API controllers.
                 var assembly = Assembly.GetExecutingAssembly();
                 builder.RegisterApiControllers(assembly);
@@ -22,5 +25,6 @@ namespace SampleSite
                 return container;
             }
         }
+
     }
 }
