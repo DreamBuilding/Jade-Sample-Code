@@ -3,6 +3,7 @@ using Autofac;
 using Autofac.Integration.WebApi;
 using Owin;
 using SampleSite.Controllers;
+using SampleSite.Converters;
 
 namespace SampleSite
 {

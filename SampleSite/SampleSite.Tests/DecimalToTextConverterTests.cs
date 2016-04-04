@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
-using SampleSite.Controllers;
+using SampleSite.Converters;
 
-namespace SampleSite.Tests.Controllers
+namespace SampleSite.Tests
 {
     [TestFixture]
     internal class DecimalToTextConverterTests

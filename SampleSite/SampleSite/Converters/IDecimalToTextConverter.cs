@@ -1,4 +1,4 @@
-﻿namespace SampleSite.Controllers
+﻿namespace SampleSite.Converters
 {
     public interface INumberToTextConverter<in T>
     {

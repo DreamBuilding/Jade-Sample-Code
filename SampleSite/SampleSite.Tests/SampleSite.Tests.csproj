@@ -69,7 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ConversionControllerTests.cs" />
-    <Compile Include="Controllers\DecimalToTextConverterTests.cs" />
+    <Compile Include="DecimalToTextConverterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

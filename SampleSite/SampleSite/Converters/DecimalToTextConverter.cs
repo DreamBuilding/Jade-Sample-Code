@@ -1,4 +1,6 @@
-﻿namespace SampleSite.Controllers
+﻿using SampleSite.Controllers;
+
+namespace SampleSite.Converters
 {
     public class DecimalToTextConverter : INumberToTextConverter<decimal>
     {
