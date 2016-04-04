@@ -51,7 +51,7 @@ namespace SampleSite.Tests.Controllers
             //act
             var response = await _server.HttpClient.PostAsync(string.Format("/api/{0}/convert-to-word", value), new StringContent(string.Empty));
 
-            var actual = await response.Content.ReadAsStringAsync();
+            var actual = await response.Content.ReadAsAsync<string>();
 
             //assert
             Assert.AreEqual(expected, actual);
@@ -84,7 +84,7 @@ namespace SampleSite.Tests.Controllers
             var response = await _server.HttpClient.PostAsync("/api/1000000.01/convert-to-word", new StringContent(string.Empty));
 
             //assert
-            Assert.AreEqual(HttpStatusCode.NotAcceptable, response.StatusCode, "Maximium input dollar amount is 1 million dollars");
+            Assert.AreEqual(HttpStatusCode.BadRequest, response.StatusCode, "Maximium input dollar amount is 1 million dollars");
         }
 
         [Test]
