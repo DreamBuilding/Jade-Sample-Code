@@ -929,6 +929,7 @@
     <Content Include="Scripts\modules\converterFactory.js" />
     <Content Include="Scripts\modules\formatter.js" />
     <Content Include="Views\Index.html" />
+    <Content Include="Views\Results.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

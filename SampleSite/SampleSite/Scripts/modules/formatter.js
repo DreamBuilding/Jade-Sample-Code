@@ -61,6 +61,11 @@
 
                 $scope.isBusy = true;
             }
-        ]);
+        ])
+        .directive('updatedCustomer', function () {
+            return {
+                templateUrl: 'results.html'
+            };
+        });
 
 })(window.angular);
