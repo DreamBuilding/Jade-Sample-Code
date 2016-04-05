@@ -1,0 +1,17 @@
+﻿body {
+    margin-top: 10px;
+}
+
+.form-horizontal label {
+     margin-top: 5px;
+     margin-bottom: 20px;
+}
+.btn-default {
+    padding:10px 40px;
+    background-color: #cccccc;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.form-horizontal .help-block { margin-bottom: 0;color: red;}
+
