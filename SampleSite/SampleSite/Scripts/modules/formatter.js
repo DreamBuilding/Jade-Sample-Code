@@ -62,9 +62,14 @@
                 $scope.isBusy = true;
             }
         ])
-        .directive('updatedCustomer', function () {
+        .directive('updatedCustomer', function() {
             return {
                 templateUrl: 'results.html'
+            };
+        })
+        .directive('newCustomer', function() {
+            return {
+                templateUrl: 'mainform.html'
             };
         });
 
